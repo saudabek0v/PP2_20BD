@@ -1,2 +1,0 @@
-# TSIS1
-# Informatics
