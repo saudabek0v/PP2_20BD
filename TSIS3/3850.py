@@ -1,8 +1,5 @@
-a = [int(i) for i in input().split()]
-for i in range(len(a)):
-    if a[i] == 0:
-        for j in range(i + 1, len(a)):
-            if a[j] != 0:
-                a[i], a[j] = a[j], a[i]
-                break
-print(*a)
+a, res = [int(i) for i in input().split()], []
+for i in a:
+    if i != 0: res.append(i)
+print(*res, end=' ')
+for i in range(a.count(0)): print(0, end=' ')
